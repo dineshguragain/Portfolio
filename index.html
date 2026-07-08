@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dinesh Guragain — Full Stack .NET Developer</title>
+  <meta name="description" content="Portfolio of Dinesh Guragain, a Full Stack .NET Developer specializing in C#, ASP.NET Core, and modern web technologies." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+ <link rel="stylesheet" href="Style.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+<body>
+  <!-- Skip link for accessibility -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="Dinesh Guragain - Home">
+        <span class="nav-logo-dot"></span>
+        <span id="nav-name">DG</span>
+      </a>
+      <ul class="nav-links" id="nav-links" role="menubar"></ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle theme">
+          ☀️
+        </button>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu" role="menu" aria-hidden="true"></div>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="container">
+        <div class="hero-content">
+        
+          <h1 id="hero-title"></h1>
+          <p class="hero-description" id="hero-description"></p>
+          <div class="hero-cta">
+            <a href="#contact" class="btn-primary">
+              <span>Get in Touch</span>
+              <span>→</span>
+            </a>
+            <a href="#projects" class="btn-secondary">
+              <span>View Projects</span>
+            </a>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <div class="hero-stat-number">6+</div>
+              <div class="hero-stat-label">Years Experience</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-number">20+</div>
+              <div class="hero-stat-label">Projects Delivered</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-number">3</div>
+              <div class="hero-stat-label">Certifications</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <div class="section-label">About Me</div>
+          <h2 class="section-title">A bit about myself</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text animate-on-scroll">
+            <p id="about-bio"></p>
+            <div class="about-details" id="about-details"></div>
+            <div class="social-links" id="social-links"></div>
+          </div>
+          <div class="about-certs animate-on-scroll" id="about-certs">
+            <h3>Certifications</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <div class="section-label">Skills & Tools</div>
+          <h2 class="section-title">Technologies I work with</h2>
+          <p class="section-subtitle">My technical toolkit honed over years of building production applications.</p>
+        </div>
+        <div class="skills-grid" id="skills-grid"></div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <div class="section-label">Experience</div>
+          <h2 class="section-title">Where I've worked</h2>
+          <p class="section-subtitle">My professional journey building software that makes a difference.</p>
+        </div>
+        <div class="timeline" id="timeline"></div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <div class="section-label">Projects</div>
+          <h2 class="section-title">Selected work</h2>
+          <p class="section-subtitle">A curated collection of projects that showcase my capabilities.</p>
+        </div>
+        <div class="projects-grid" id="projects-grid"></div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <div class="section-label">Testimonials</div>
+          <h2 class="section-title">Kind words from colleagues</h2>
+        </div>
+        <div class="testimonials-grid" id="testimonials-grid"></div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <div class="section-label">Education</div>
+          <h2 class="section-title">Academic background</h2>
+        </div>
+        <div id="education-grid"></div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <div class="section-label">Contact</div>
+          <h2 class="section-title">Let's work together</h2>
+          <p class="section-subtitle">Have a project in mind or just want to say hello? I'd love to hear from you.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-text animate-on-scroll">
+            <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Feel free to reach out through the form or any of the channels below.</p>
+            <div id="contact-info"></div>
+          </div>
+          <form class="contact-form animate-on-scroll" id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="form-name">Name</label>
+                <input type="text" id="form-name" name="name" placeholder="Your name" required autocomplete="name" />
+              </div>
+              <div class="form-group">
+                <label for="form-email">Email</label>
+                <input type="email" id="form-email" name="email" placeholder="you@example.com" required autocomplete="email" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="form-subject">Subject</label>
+              <input type="text" id="form-subject" name="subject" placeholder="What's this about?" />
+            </div>
+            <div class="form-group">
+              <label for="form-message">Message</label>
+              <textarea id="form-message" name="message" placeholder="Tell me about your project..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary" style="align-self: flex-start;">
+              <span>Send Message</span>
+              <span>→</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>Crafted with care by <a href="#hero" id="footer-name">Dinesh Guragain</a> · <span id="footer-year"></span></p>
+    </div>
+  </footer>
+
+  <!-- Scroll to top -->
+  <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">↑</button>
+
+  <script src="Scrypt.js"></script>
+</body>
+</html>

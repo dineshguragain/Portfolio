@@ -1,0 +1,172 @@
+{
+  "personal": {
+    "name": "Dinesh Guragain",
+    "title": "Full Stack .NET Developer",
+    "tagline": "Building robust, scalable web applications with clean architecture and modern technologies.",
+    "bio": "I'm a passionate Full Stack .NET Developer with 6+ years of experience crafting enterprise-grade web applications. I specialize in building end-to-end solutions using C#, ASP.NET Core, and modern frontend frameworks. I thrive on writing clean, maintainable code and transforming complex business requirements into elegant digital experiences.",
+    "email": "dinesh.guragain@email.com",
+    "phone": "+977-9841234567",
+    "location": "Kathmandu, Nepal",
+    "resumeUrl": "#",
+    "avatar": "",
+    "social": {
+      "github": "https://github.com/dineshguragain",
+      "linkedin": "https://linkedin.com/in/dineshguragain",
+      "twitter": "https://twitter.com/dineshguragain",
+      "stackoverflow": "https://stackoverflow.com/users/22649219/dinesh-guragain"
+    }
+  },
+  "skills": [
+    {
+      "category": "Backend",
+      "items": ["C#", ".NET Core / .NET 8", "ASP.NET Core MVC", "ASP.NET Web API", "Entity Framework Core", "Dapper", "SignalR", "Hangfire"]
+    },
+    {
+      "category": "Frontend",
+      "items": ["HTML5 / CSS3", "JavaScript (ES6+)", "TypeScript", "Blazor", "React.js", "Tailwind CSS", "Bootstrap"]
+    },
+    {
+      "category": "Database",
+      "items": ["SQL Server", "PostgreSQL", "MongoDB", "Redis", "SQLite"]
+    },
+    {
+      "category": "DevOps & Tools",
+      "items": ["Azure DevOps", "Docker", "CI/CD Pipelines", "Git & GitHub", "Nginx", "IIS", "Swagger / OpenAPI"]
+    },
+    {
+      "category": "Practices",
+      "items": ["Clean Architecture", "SOLID Principles", "Domain-Driven Design", "Unit Testing (xUnit)", "Agile / Scrum", "RESTful API Design", "Microservices"]
+    }
+  ],
+  "experience": [
+    {
+      "role": "Senior .NET Developer",
+      "company": "TechSphere Solutions",
+      "location": "Kathmandu, Nepal",
+      "period": "Jan 2022 – Present",
+      "description": "Leading a team of 5 developers to build and maintain enterprise ERP solutions using .NET 8 and Blazor. Architected microservices-based backend serving 50k+ daily active users.",
+      "highlights": [
+        "Reduced API response time by 40% through query optimization and Redis caching",
+        "Implemented CI/CD pipelines with Azure DevOps, cutting deployment time by 60%",
+        "Mentored 3 junior developers and conducted code reviews"
+      ]
+    },
+    {
+      "role": ".NET Developer",
+      "company": "CloudNine Technologies",
+      "location": "Lalitpur, Nepal",
+      "period": "Mar 2020 – Dec 2021",
+      "description": "Developed RESTful APIs and web applications for fintech clients using ASP.NET Core and Angular. Managed end-to-end project delivery in an Agile environment.",
+      "highlights": [
+        "Built a payment gateway integration processing 10k+ transactions daily",
+        "Migrated legacy .NET Framework apps to .NET Core, improving performance by 35%",
+        "Designed and implemented role-based access control system"
+      ]
+    },
+    {
+      "role": "Software Developer",
+      "company": "InfoDev Pvt. Ltd.",
+      "location": "Kathmandu, Nepal",
+      "period": "Jun 2018 – Feb 2020",
+      "description": "Started my professional journey building web applications with ASP.NET MVC and jQuery. Gained foundational experience in full software development lifecycle.",
+      "highlights": [
+        "Developed 5+ client-facing web applications from scratch",
+        "Created reusable component libraries reducing development time by 25%",
+        "Participated in database design and optimization for SQL Server"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "HealthTrack Pro",
+      "description": "A comprehensive healthcare management system for clinics and hospitals. Features include patient records, appointment scheduling, billing, and real-time notifications.",
+      "tech": [".NET 8", "Blazor Server", "SQL Server", "SignalR", "Docker"],
+      "liveUrl": "#",
+      "githubUrl": "#",
+      "featured": true
+    },
+    {
+      "title": "ShopEase API",
+      "description": "A scalable e-commerce REST API with clean architecture. Includes product catalog, cart management, order processing, and payment integration with Stripe.",
+      "tech": ["ASP.NET Core", "Entity Framework", "PostgreSQL", "Redis", "Swagger"],
+      "liveUrl": "#",
+      "githubUrl": "#",
+      "featured": true
+    },
+    {
+      "title": "TaskFlow",
+      "description": "Real-time project management tool with kanban boards, team collaboration features, and automated workflow triggers. Built with a microservices approach.",
+      "tech": [".NET Core", "React.js", "MongoDB", "RabbitMQ", "Azure"],
+      "liveUrl": "#",
+      "githubUrl": "#",
+      "featured": true
+    },
+    {
+      "title": "DevBlog Engine",
+      "description": "A lightweight, SEO-optimized blogging platform for developers. Supports markdown editing, syntax highlighting, tagging, and RSS feeds.",
+      "tech": ["ASP.NET Core MVC", "SQLite", "Tailwind CSS", "Markdown-it"],
+      "liveUrl": "#",
+      "githubUrl": "#",
+      "featured": false
+    },
+    {
+      "title": "FinLedger",
+      "description": "Personal finance tracking application with expense categorization, budget planning, visual analytics dashboards, and CSV/PDF export capabilities.",
+      "tech": ["Blazor WASM", ".NET 8", "Chart.js", "SQL Server"],
+      "liveUrl": "#",
+      "githubUrl": "#",
+      "featured": false
+    },
+    {
+      "title": "ChatConnect",
+      "description": "Real-time messaging application with group chats, file sharing, message encryption, and presence indicators. Optimized for low-latency communication.",
+      "tech": ["ASP.NET Core", "SignalR", "React.js", "Redis", "WebSockets"],
+      "liveUrl": "#",
+      "githubUrl": "#",
+      "featured": false
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Engineering in Computer Science",
+      "institution": "Tribhuvan University",
+      "location": "Kathmandu, Nepal",
+      "period": "2014 – 2018",
+      "description": "Graduated with distinction. Focused on software engineering, data structures, and web technologies."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Microsoft Certified: Azure Developer Associate",
+      "issuer": "Microsoft",
+      "year": "2023"
+    },
+    {
+      "name": "Microsoft Certified: .NET Developer",
+      "issuer": "Microsoft",
+      "year": "2022"
+    },
+    {
+      "name": "AWS Certified Cloud Practitioner",
+      "issuer": "Amazon Web Services",
+      "year": "2021"
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "Dinesh is an exceptional developer who consistently delivers high-quality code. His deep understanding of .NET ecosystem and clean architecture principles made our project a success.",
+      "author": "Suman Shrestha",
+      "role": "CTO, TechSphere Solutions"
+    },
+    {
+      "quote": "Working with Dinesh was a pleasure. He has a rare ability to understand complex business logic and translate it into elegant, performant software solutions.",
+      "author": "Priya Adhikari",
+      "role": "Product Manager, CloudNine Technologies"
+    },
+    {
+      "quote": "Dinesh brought both technical excellence and great communication skills to our team. He proactively identified issues and proposed creative solutions that saved us weeks of work.",
+      "author": "Rajesh Karki",
+      "role": "Senior Architect, InfoDev Pvt. Ltd."
+    }
+  ]
+}
