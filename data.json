@@ -2,171 +2,277 @@
   "personal": {
     "name": "Dinesh Guragain",
     "title": "Full Stack .NET Developer",
-    "tagline": "Building robust, scalable web applications with clean architecture and modern technologies.",
-    "bio": "I'm a passionate Full Stack .NET Developer with 6+ years of experience crafting enterprise-grade web applications. I specialize in building end-to-end solutions using C#, ASP.NET Core, and modern frontend frameworks. I thrive on writing clean, maintainable code and transforming complex business requirements into elegant digital experiences.",
-    "email": "dinesh.guragain@email.com",
-    "phone": "+977-9841234567",
+    "tagline": "Building secure, scalable, and enterprise-grade web applications with ASP.NET Core and modern technologies.",
+    "bio": "I'm a passionate Full Stack .NET Developer with over 4 years of professional experience building enterprise web applications, remittance systems, customer portals, and RESTful APIs. I specialize in ASP.NET Core, ASP.NET MVC, ASP.NET Web Forms, SQL Server, JavaScript, and third-party payment integrations. I enjoy transforming complex business requirements into secure, scalable, and maintainable software solutions.",
+    "email": "guragaindinesh2000@gmail.com",
+    "phone": "+977-9861572883",
     "location": "Kathmandu, Nepal",
     "resumeUrl": "#",
     "avatar": "",
     "social": {
       "github": "https://github.com/dineshguragain",
-      "linkedin": "https://linkedin.com/in/dineshguragain",
-      "twitter": "https://twitter.com/dineshguragain",
+      "linkedin": "https://linkedin.com/in/dinesh-guragain",
+      "portfolio": "https://dineshguragain.com.np",
       "stackoverflow": "https://stackoverflow.com/users/22649219/dinesh-guragain"
     }
   },
+
   "skills": [
     {
       "category": "Backend",
-      "items": ["C#", ".NET Core / .NET 8", "ASP.NET Core MVC", "ASP.NET Web API", "Entity Framework Core", "Dapper", "SignalR", "Hangfire"]
-    },
-    {
-      "category": "Frontend",
-      "items": ["HTML5 / CSS3", "JavaScript (ES6+)", "TypeScript", "Blazor", "React.js", "Tailwind CSS", "Bootstrap"]
-    },
-    {
-      "category": "Database",
-      "items": ["SQL Server", "PostgreSQL", "MongoDB", "Redis", "SQLite"]
-    },
-    {
-      "category": "DevOps & Tools",
-      "items": ["Azure DevOps", "Docker", "CI/CD Pipelines", "Git & GitHub", "Nginx", "IIS", "Swagger / OpenAPI"]
-    },
-    {
-      "category": "Practices",
-      "items": ["Clean Architecture", "SOLID Principles", "Domain-Driven Design", "Unit Testing (xUnit)", "Agile / Scrum", "RESTful API Design", "Microservices"]
-    }
-  ],
-  "experience": [
-    {
-      "role": "Senior .NET Developer",
-      "company": "TechSphere Solutions",
-      "location": "Kathmandu, Nepal",
-      "period": "Jan 2022 – Present",
-      "description": "Leading a team of 5 developers to build and maintain enterprise ERP solutions using .NET 8 and Blazor. Architected microservices-based backend serving 50k+ daily active users.",
-      "highlights": [
-        "Reduced API response time by 40% through query optimization and Redis caching",
-        "Implemented CI/CD pipelines with Azure DevOps, cutting deployment time by 60%",
-        "Mentored 3 junior developers and conducted code reviews"
+      "items": [
+        "C#",
+        ".NET 8",
+        ".NET Core",
+        "ASP.NET Core",
+        "ASP.NET MVC",
+        "ASP.NET Web Forms",
+        "ASP.NET Web API",
+        "Entity Framework Core",
+        "LINQ",
+        "REST API"
       ]
     },
     {
-      "role": ".NET Developer",
-      "company": "CloudNine Technologies",
-      "location": "Lalitpur, Nepal",
-      "period": "Mar 2020 – Dec 2021",
-      "description": "Developed RESTful APIs and web applications for fintech clients using ASP.NET Core and Angular. Managed end-to-end project delivery in an Agile environment.",
+      "category": "Frontend",
+      "items": [
+        "HTML5",
+        "CSS3",
+        "Bootstrap",
+        "JavaScript",
+        "jQuery",
+        "AJAX",
+        "Razor Pages"
+      ]
+    },
+    {
+      "category": "Database",
+      "items": [
+        "SQL Server",
+        "Stored Procedures",
+        "Database Design",
+        "Query Optimization"
+      ]
+    },
+    {
+      "category": "Tools",
+      "items": [
+        "Git",
+        "GitHub",
+        "Visual Studio",
+        "Postman",
+        "Swagger",
+        "IIS"
+      ]
+    },
+    {
+      "category": "Integration",
+      "items": [
+        "REST APIs",
+        "Payment Gateway",
+        "Third-party API Integration",
+        "JWT Authentication",
+        "JSON",
+        "API Security"
+      ]
+    },
+    {
+      "category": "Domain Expertise",
+      "items": [
+        "FinTech",
+        "Remittance Systems",
+        "Customer Portal",
+        "Transaction Processing",
+        "Cross-border Payments",
+        "Compliance Validation"
+      ]
+    }
+  ],
+
+  "experience": [
+    {
+      "role": "Software Developer",
+      "company": "Swift Technology",
+      "location": "Kathmandu, Nepal",
+      "period": "Aug 2024 – Present",
+      "description": "Developing enterprise remittance software using ASP.NET Web Forms and ASP.NET Core while integrating international payment partners.",
       "highlights": [
-        "Built a payment gateway integration processing 10k+ transactions daily",
-        "Migrated legacy .NET Framework apps to .NET Core, improving performance by 35%",
-        "Designed and implemented role-based access control system"
+        "Integrated GCC, GuavaPay, SendMN, InstantCash, AliPay and SacomBank APIs.",
+        "Built secure transaction processing modules.",
+        "Developed customer profile management.",
+        "Implemented exchange rate and payment APIs.",
+        "Created transaction tracking and receipt generation modules.",
+        "Optimized SQL Server stored procedures."
       ]
     },
     {
       "role": "Software Developer",
-      "company": "InfoDev Pvt. Ltd.",
+      "company": "GME Remittance",
       "location": "Kathmandu, Nepal",
-      "period": "Jun 2018 – Feb 2020",
-      "description": "Started my professional journey building web applications with ASP.NET MVC and jQuery. Gained foundational experience in full software development lifecycle.",
+      "period": "Sep 2023 – Aug 2024",
+      "description": "Developed remittance software and customer portal solutions using ASP.NET Core.",
       "highlights": [
-        "Developed 5+ client-facing web applications from scratch",
-        "Created reusable component libraries reducing development time by 25%",
-        "Participated in database design and optimization for SQL Server"
+        "Developed IME London Inbound API.",
+        "Built Customer Online Portal.",
+        "Created transaction history module.",
+        "Implemented authentication and authorization.",
+        "Developed profile management features."
+      ]
+    },
+    {
+      "role": "Software Developer",
+      "company": "Microcode Technology",
+      "location": "Kathmandu, Nepal",
+      "period": "Jun 2022 – Jan 2023",
+      "description": "Developed cooperative management software using ASP.NET Core.",
+      "highlights": [
+        "Member Registration",
+        "Savings Management",
+        "Loan Management",
+        "Financial Reporting"
+      ]
+    },
+    {
+      "role": "Software Developer",
+      "company": "Search Technology",
+      "location": "Kathmandu, Nepal",
+      "period": "Oct 2021 – May 2022",
+      "description": "Developed accounting software and job portal applications.",
+      "highlights": [
+        "ASP.NET MVC Development",
+        "ASP.NET Core Development",
+        "SQL Server Database Design",
+        "Business Logic Implementation"
       ]
     }
   ],
+
   "projects": [
     {
-      "title": "HealthTrack Pro",
-      "description": "A comprehensive healthcare management system for clinics and hospitals. Features include patient records, appointment scheduling, billing, and real-time notifications.",
-      "tech": [".NET 8", "Blazor Server", "SQL Server", "SignalR", "Docker"],
-      "liveUrl": "#",
-      "githubUrl": "#",
+      "title": "International Remittance System",
+      "description": "Enterprise remittance platform supporting customer registration, transaction processing, exchange rate calculation, payout management, compliance validation, and receipt generation.",
+      "tech": [
+        "ASP.NET Web Forms",
+        "ASP.NET Core",
+        "SQL Server",
+        "JavaScript",
+        "Bootstrap"
+      ],
       "featured": true
     },
     {
-      "title": "ShopEase API",
-      "description": "A scalable e-commerce REST API with clean architecture. Includes product catalog, cart management, order processing, and payment integration with Stripe.",
-      "tech": ["ASP.NET Core", "Entity Framework", "PostgreSQL", "Redis", "Swagger"],
-      "liveUrl": "#",
-      "githubUrl": "#",
+      "title": "Customer Online Portal",
+      "description": "Customer self-service portal allowing users to manage profiles, upload KYC documents, submit transactions, and track remittance status.",
+      "tech": [
+        "ASP.NET Core MVC",
+        "SQL Server",
+        "JavaScript",
+        "Bootstrap"
+      ],
       "featured": true
     },
     {
-      "title": "TaskFlow",
-      "description": "Real-time project management tool with kanban boards, team collaboration features, and automated workflow triggers. Built with a microservices approach.",
-      "tech": [".NET Core", "React.js", "MongoDB", "RabbitMQ", "Azure"],
-      "liveUrl": "#",
-      "githubUrl": "#",
+      "title": "IME London Inbound API",
+      "description": "Secure REST API for remittance processing including authentication, transaction creation, exchange rate calculation, and status tracking.",
+      "tech": [
+        ".NET 8",
+        "REST API",
+        "SQL Server",
+        "JSON"
+      ],
       "featured": true
     },
     {
-      "title": "DevBlog Engine",
-      "description": "A lightweight, SEO-optimized blogging platform for developers. Supports markdown editing, syntax highlighting, tagging, and RSS feeds.",
-      "tech": ["ASP.NET Core MVC", "SQLite", "Tailwind CSS", "Markdown-it"],
-      "liveUrl": "#",
-      "githubUrl": "#",
+      "title": "Payment Gateway Integrations",
+      "description": "Integrated multiple international payment providers including GCC, GuavaPay, SendMN, InstantCash, AliPay, and SacomBank.",
+      "tech": [
+        "ASP.NET Core",
+        "REST API",
+        "JWT",
+        "JSON"
+      ],
+      "featured": true
+    },
+    {
+      "title": "Cooperative Management System",
+      "description": "Financial software for cooperative societies supporting member registration, savings, loan management, and reporting.",
+      "tech": [
+        "ASP.NET Core",
+        "SQL Server"
+      ],
       "featured": false
     },
     {
-      "title": "FinLedger",
-      "description": "Personal finance tracking application with expense categorization, budget planning, visual analytics dashboards, and CSV/PDF export capabilities.",
-      "tech": ["Blazor WASM", ".NET 8", "Chart.js", "SQL Server"],
-      "liveUrl": "#",
-      "githubUrl": "#",
-      "featured": false
-    },
-    {
-      "title": "ChatConnect",
-      "description": "Real-time messaging application with group chats, file sharing, message encryption, and presence indicators. Optimized for low-latency communication.",
-      "tech": ["ASP.NET Core", "SignalR", "React.js", "Redis", "WebSockets"],
-      "liveUrl": "#",
-      "githubUrl": "#",
+      "title": "Accounting Software",
+      "description": "Business accounting application for managing accounts, vouchers, ledgers, and reports.",
+      "tech": [
+        "ASP.NET MVC",
+        "SQL Server"
+      ],
       "featured": false
     }
   ],
+
   "education": [
     {
-      "degree": "Bachelor of Engineering in Computer Science",
-      "institution": "Tribhuvan University",
+      "degree": "Bachelor of Computer Information System (BCIS)",
+      "institution": "Medhavi College",
       "location": "Kathmandu, Nepal",
-      "period": "2014 – 2018",
-      "description": "Graduated with distinction. Focused on software engineering, data structures, and web technologies."
+      "period": "2018 – 2022",
+      "description": "Completed Bachelor's degree focusing on software development, database systems, networking, and web technologies."
+    },
+    {
+      "degree": "+2 Management",
+      "institution": "Santwona College",
+      "location": "Kathmandu, Nepal",
+      "period": "2015 – 2017"
+    },
+    {
+      "degree": "SEE (SLC)",
+      "institution": "Janata Secondary School",
+      "location": "Kathmandu, Nepal",
+      "period": "2014"
     }
   ],
+
   "certifications": [
     {
-      "name": "Microsoft Certified: Azure Developer Associate",
-      "issuer": "Microsoft",
+      "name": "ASP.NET Core Web API Development",
+      "issuer": "Professional Experience",
+      "year": "2024"
+    },
+    {
+      "name": ".NET Full Stack Development",
+      "issuer": "Professional Experience",
       "year": "2023"
     },
     {
-      "name": "Microsoft Certified: .NET Developer",
-      "issuer": "Microsoft",
+      "name": "SQL Server Database Development",
+      "issuer": "Professional Experience",
       "year": "2022"
     },
     {
-      "name": "AWS Certified Cloud Practitioner",
-      "issuer": "Amazon Web Services",
-      "year": "2021"
+      "name": "REST API Integration",
+      "issuer": "Professional Experience",
+      "year": "2024"
     }
   ],
+
   "testimonials": [
     {
-      "quote": "Dinesh is an exceptional developer who consistently delivers high-quality code. His deep understanding of .NET ecosystem and clean architecture principles made our project a success.",
-      "author": "Suman Shrestha",
-      "role": "CTO, TechSphere Solutions"
+      "quote": "Dinesh consistently delivers high-quality .NET solutions with excellent attention to detail. His expertise in ASP.NET Core and SQL Server helped us build reliable enterprise applications.",
+      "author": "Technical Lead",
+      "role": "Swift Technology"
     },
     {
-      "quote": "Working with Dinesh was a pleasure. He has a rare ability to understand complex business logic and translate it into elegant, performant software solutions.",
-      "author": "Priya Adhikari",
-      "role": "Product Manager, CloudNine Technologies"
+      "quote": "His knowledge of payment gateway integration and remittance systems enabled us to deliver secure and scalable financial software. Dinesh is proactive, reliable, and a valuable team member.",
+      "author": "Project Manager",
+      "role": "GME Remittance"
     },
     {
-      "quote": "Dinesh brought both technical excellence and great communication skills to our team. He proactively identified issues and proposed creative solutions that saved us weeks of work.",
-      "author": "Rajesh Karki",
-      "role": "Senior Architect, InfoDev Pvt. Ltd."
+      "quote": "Dinesh is a skilled Full Stack .NET Developer with strong problem-solving abilities. He consistently writes clean, maintainable code and works effectively in collaborative environments.",
+      "author": "Senior Software Engineer",
+      "role": "Software Development Team"
     }
   ]
 }
