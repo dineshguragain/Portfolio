@@ -151,7 +151,7 @@
         { label: 'Location', value: personal.location },
         { label: 'Email', value: personal.email },
         { label: 'Phone', value: personal.phone },
-        { label: 'Experience', value: '6+ Years' }
+        { label: 'Experience', value: '4+ Years' }
       ];
       aboutDetails.innerHTML = detailItems.map(d => `
         <div class="about-detail">
@@ -234,9 +234,7 @@
             ${proj.tech.map(t => `<span>${t}</span>`).join('')}
           </div>
           <div class="project-links">
-            <a href="${proj.githubUrl}" target="_blank" rel="noopener noreferrer" aria-label="View source code for ${proj.title}">
-              ${icons.github} Code
-            </a>
+          
             <a href="${proj.liveUrl}" target="_blank" rel="noopener noreferrer" aria-label="View live demo of ${proj.title}">
               ${icons.external} Live Demo
             </a>
