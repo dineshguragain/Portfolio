@@ -683,82 +683,78 @@ function initializeContactForm() {
 
     contactForm.dataset.initialized = "true";
 
-    contactForm.addEventListener("submit", async function (e) {
+ contactForm.addEventListener("submit", async function (e) {
 
-        e.preventDefault();
+    e.preventDefault();
 
-        const button = contactForm.querySelector(".btn-primary");
+    // Validate form first
+    if (!contactForm.checkValidity()) {
+        contactForm.reportValidity();
+        return;
+    }
 
-        if (!button) return;
+    const button = contactForm.querySelector(".btn-primary");
 
-        const originalHTML = button.innerHTML;
+    if (!button) return;
 
-        button.disabled = true;
-        button.innerHTML = "<span>Sending...</span>";
+    const originalHTML = button.innerHTML;
 
-        const templateParams = {
+    button.disabled = true;
+    button.innerHTML = "<span>Sending...</span>";
 
-            from_name: document.getElementById("form-name").value.trim(),
+    const templateParams = {
 
-            from_email: document.getElementById("form-email").value.trim(),
+        from_name: document.getElementById("form-name").value.trim(),
 
-            subject: document.getElementById("form-subject").value.trim(),
+        from_email: document.getElementById("form-email").value.trim(),
 
-            message: document.getElementById("form-message").value.trim()
+        subject: document.getElementById("form-subject").value.trim(),
 
-        };
+        message: document.getElementById("form-message").value.trim()
 
-        try {
+    };
 
-            await emailjs.send(
+    try {
 
-                "service_n7eyqzg",
+        await emailjs.send(
+            "service_n7eyqzg",
+            "template_rss59gn",
+            templateParams
+        );
 
-                "template_rss59gn",
+        button.classList.remove("error");
+        button.classList.add("success");
 
-                templateParams
+        button.innerHTML = "<span>✓ Message Sent</span>";
 
-            );
+        contactForm.reset();
 
-            button.classList.remove("error");
-            button.classList.add("success");
+    }
+    catch (err) {
 
-            button.innerHTML = "<span>✓ Message Sent</span>";
+        console.error("EmailJS Error:", err);
 
-            contactForm.reset();
+        button.classList.remove("success");
+        button.classList.add("error");
 
-        }
-        catch (err) {
+        button.innerHTML = "<span>✗ Failed</span>";
 
-            console.error("EmailJS Error:", err);
+        alert(err?.text || "Unable to send your message. Please try again.");
 
-            button.classList.remove("success");
-            button.classList.add("error");
+    }
+    finally {
 
-            button.innerHTML = "<span>✗ Failed</span>";
+        setTimeout(() => {
 
-            alert(
-                err?.text ||
-                "Unable to send your message. Please try again."
-            );
+            button.disabled = false;
+            button.classList.remove("success", "error");
+            button.innerHTML = originalHTML;
 
-        }
-        finally {
+        }, 3000);
 
-            setTimeout(() => {
+    }
 
-                button.disabled = false;
-
-                button.classList.remove("success");
-                button.classList.remove("error");
-
-                button.innerHTML = originalHTML;
-
-            }, 3000);
-
-        }
-
-    });
+});
 
 }
 // ==========================================
