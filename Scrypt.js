@@ -384,8 +384,8 @@ contactForm.addEventListener("submit", function (e) {
         try {
 
             await emailjs.send(
-                "YOUR_SERVICE_ID",
-                "YOUR_TEMPLATE_ID",
+                "service_n7eyqzg",
+                "template_c8uo9qr",
                 templateParams
             );
 
