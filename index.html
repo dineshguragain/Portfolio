@@ -169,11 +169,21 @@
             <div class="form-row">
               <div class="form-group">
                 <label for="form-name">Name</label>
-                <input type="text" id="form-name" name="name" placeholder="Your name" required autocomplete="name" />
+                  <input type="text"
+       id="form-name"
+       name="from_name"
+       placeholder="Your name"
+       required
+       autocomplete="name" />
               </div>
               <div class="form-group">
                 <label for="form-email">Email</label>
-                <input type="email" id="form-email" name="email" placeholder="you@example.com" required autocomplete="email" />
+                <input type="email"
+       id="form-email"
+       name="from_email"
+       placeholder="you@example.com"
+       required
+       autocomplete="email" />
               </div>
             </div>
             <div class="form-group">
@@ -203,7 +213,14 @@
 
   <!-- Scroll to top -->
   <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">↑</button>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
-  <script src="Scrypt.js"></script>
+<script>
+emailjs.init({
+    publicKey: "EidxOdWD8_Y5Zq20B"
+});
+</script>
+
+<script src="Scrypt.js"></script>
 </body>
 </html>

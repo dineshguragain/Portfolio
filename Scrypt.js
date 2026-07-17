@@ -271,24 +271,73 @@
         educationGrid.appendChild(card);
       });
 
-      // Contact info
-      const contactInfo = document.getElementById('contact-info');
-      const contactItems = [
-        { icon: icons.mail, label: 'Email', value: personal.email, href: `mailto:${personal.email}` },
-        { icon: icons.phone, label: 'Phone', value: personal.phone, href: `tel:${personal.phone}` },
-        { icon: icons.location, label: 'Location', value: personal.location, href: null }
-      ];
-      contactInfo.innerHTML = contactItems.map(c => `
-        <div class="contact-info-item">
-          <div class="contact-info-icon">${c.icon}</div>
-          <div>
-            <div class="contact-info-label">${c.label}</div>
-            <div class="contact-info-value">
-              ${c.href ? `<a href="${c.href}">${c.value}</a>` : c.value}
-            </div>
-          </div>
-        </div>
-      `).join('');
+
+
+const contactForm = document.getElementById("contact-form");
+
+contactForm.addEventListener("submit", function (e) {
+
+    e.preventDefault();
+
+    const btn = contactForm.querySelector(".btn-primary");
+    const originalHTML = btn.innerHTML;
+
+    btn.disabled = true;
+    btn.innerHTML = "<span>Sending...</span>";
+
+    const templateParams = {
+
+        from_name: document.getElementById("form-name").value,
+
+        from_email: document.getElementById("form-email").value,
+
+        subject: document.getElementById("form-subject").value,
+
+        message: document.getElementById("form-message").value
+
+    };
+
+    emailjs.send(
+        "service_2hl9mw8",
+        "template_c8uo9qr",
+        templateParams
+    )
+
+    .then(function () {
+
+        btn.innerHTML = "<span>✅ Message Sent</span>";
+        btn.style.background = "#16a34a";
+
+        contactForm.reset();
+
+        setTimeout(() => {
+
+            btn.innerHTML = originalHTML;
+            btn.style.background = "";
+            btn.disabled = false;
+
+        }, 3000);
+
+    })
+
+    .catch(function (error) {
+
+        console.error(error);
+
+        btn.innerHTML = "<span>❌ Failed</span>";
+        btn.style.background = "#dc2626";
+
+        setTimeout(() => {
+
+            btn.innerHTML = originalHTML;
+            btn.style.background = "";
+            btn.disabled = false;
+
+        }, 3000);
+
+    });
+
+});
 
       // Footer
       document.getElementById('footer-name').textContent = personal.name;
@@ -304,19 +353,74 @@
       initScrollAnimations();
     }
 
-    // ===== Contact Form =====
-    document.getElementById('contact-form').addEventListener('submit', (e) => {
-      e.preventDefault();
-      const btn = e.target.querySelector('.btn-primary');
-      const originalHTML = btn.innerHTML;
-      btn.innerHTML = '<span>Message Sent! ✓</span>';
-      btn.style.background = '#22c55e';
-      setTimeout(() => {
-        btn.innerHTML = originalHTML;
-        btn.style.background = '';
-        e.target.reset();
-      }, 2500);
+  function initializeContactForm() {
+
+    const contactForm = document.getElementById("contact-form");
+
+    if (!contactForm) return;
+
+    contactForm.addEventListener("submit", async function (e) {
+
+        e.preventDefault();
+
+        const button = contactForm.querySelector(".btn-primary");
+        const originalHTML = button.innerHTML;
+
+        button.disabled = true;
+        button.innerHTML = "<span>Sending...</span>";
+
+        const templateParams = {
+
+            from_name: document.getElementById("form-name").value,
+
+            from_email: document.getElementById("form-email").value,
+
+            subject: document.getElementById("form-subject").value,
+
+            message: document.getElementById("form-message").value
+
+        };
+
+        try {
+
+            await emailjs.send(
+                "YOUR_SERVICE_ID",
+                "YOUR_TEMPLATE_ID",
+                templateParams
+            );
+
+            button.classList.add("success");
+            button.innerHTML = "<span>✓ Message Sent</span>";
+
+            contactForm.reset();
+
+        }
+        catch (err) {
+
+            console.error(err);
+
+            button.classList.add("error");
+            button.innerHTML = "<span>✗ Failed</span>";
+
+        }
+        finally {
+
+            setTimeout(() => {
+
+                button.classList.remove("success");
+                button.classList.remove("error");
+
+                button.disabled = false;
+
+                button.innerHTML = originalHTML;
+
+            }, 3000);
+
+        }
+
     });
+
+}
 
     // ===== Counter Animation =====
     function animateCounters() {
@@ -348,7 +452,9 @@
         if (!response.ok) throw new Error('Failed to load data');
         portfolioData = await response.json();
         renderPortfolio(portfolioData);
+        initializeContactForm();
         animateCounters();
+
       } catch (err) {
         console.error('Error loading portfolio data:', err);
         // Fallback: show error state

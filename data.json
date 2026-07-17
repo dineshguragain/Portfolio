@@ -221,10 +221,13 @@
       "period": "2018 – 2022",
       "description": "Completed Bachelor's degree focusing on software development, database systems, networking, and web technologies."
     },
-    {
-      "degree": "+2 Management",
-      "period": "2015 – 2017"
-    }
+   {
+  "degree": "+2 Management",
+  "institution": "Santwona College",
+  "location": "Kathmandu, Nepal",
+  "period": "2015 – 2017",
+  "description": "Completed Higher Secondary Education in Management."
+  }
   ],
 
   "certifications": [

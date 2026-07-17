@@ -341,7 +341,7 @@
       transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
       box-shadow: 0 2px 12px rgba(224, 122, 58, 0.25);
     }
-    .btn-primary:hover {
+    .btn-primary:hover:not(:disabled) {
       background: var(--accent-dark);
       transform: translateY(-2px);
       box-shadow: 0 6px 24px rgba(224, 122, 58, 0.35);
@@ -872,6 +872,7 @@
       display: flex;
       flex-direction: column;
       gap: 18px;
+      transition: all .3s ease;
     }
     .form-group { position: relative; }
     .form-group label {
@@ -895,13 +896,23 @@
       font-size: 0.92rem;
       outline: none;
       transition: all 0.25s ease;
-      resize: vertical;
+      resize: none;
     }
-    .form-group input:focus,
-    .form-group textarea:focus {
-      border-color: var(--accent);
-      box-shadow: 0 0 0 3px var(--accent-glow);
-    }
+    @keyframes successPop {
+    0% { transform: scale(1); }
+    40% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.btn-primary.success {
+    animation: successPop .35s ease;
+}
+   .form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 4px rgba(224,122,58,.18);
+}
     .form-group textarea { min-height: 130px; }
     .form-row {
       display: grid;
@@ -1054,4 +1065,29 @@
       }
       html { scroll-behavior: auto; }
     }
- 
+ .btn-primary:disabled {
+    opacity: .75;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+.btn-primary.success {
+    background: #16a34a !important;
+    border-color: #16a34a;
+}
+.btn-primary.error {
+    background: #dc2626 !important;
+    border-color: #dc2626;
+}
+.contact-status {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.contact-status.success {
+    color: #16a34a;
+}
+
+.contact-status.error {
+    color: #dc2626;
+}
