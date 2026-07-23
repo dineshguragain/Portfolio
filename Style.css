@@ -402,14 +402,6 @@
       letter-spacing: 1.5px;
       margin-bottom: 14px;
     }
-    .section-label::before {
-      content: '';
-      display: inline-block;
-      width: 24px;
-      height: 2px;
-      background: var(--accent);
-      border-radius: 1px;
-    }
     .section-title {
       font-size: clamp(1.8rem, 3.5vw, 2.4rem);
       font-weight: 700;
